@@ -1,0 +1,273 @@
+$general-padding: 60px;
+$small-padding: 30px;
+$section-height: 33rem;
+
+$contrast-color: #fff;
+$emphasis-color: #213590;
+$tagline-color: #4A4A4A;
+
+@mixin cover-background($img-uri, $background-pos, $background-size) {
+  background: url($img-uri) no-repeat unquote($background-pos);
+  -webkit-background-size: unquote($background-size);
+  -moz-background-size: unquote($background-size);
+  -o-background-size: unquote($background-size);
+  background-size: unquote($background-size);
+}
+
+// pseudo-element to allow transparency in background img
+@mixin transparent-background($img-uri, $background-pos, $background-size, $opacity) {
+  content: "";
+  @include cover-background($img-uri, $background-pos, $background-size);
+  opacity: $opacity;
+  left: 0;
+  right: 0;
+  height: inherit;
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin hori-list($item-width, $vert-padding, $text-alignment) {
+  ul {
+    margin: #{$vert-padding} $small-padding;
+    li {
+      width: calc(#{$item-width} - #{$general-padding});
+      float: left;
+      padding: 0 $small-padding;
+      text-align: unquote($text-alignment);
+    }
+  }
+}
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Header */
+
+body {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+}
+
+section {
+  height: $section-height;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font: 800 2.7em "Avenir";
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font: 800 1.85em "Avenir";
+  color: $contrast-color;
+  padding: $general-padding 0;
+  letter-spacing: 0.03em;
+}
+
+h3, .footer-links > li {
+  font: 300 1.3em "Museo Sans Cyrl";
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font: 800 1.15em "Avenir";
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: $general-padding $general-padding 0;
+  color: $contrast-color;
+}
+
+.footer {
+  width: inherit;;
+  padding: $small-padding $general-padding;
+}
+
+.header-logo {
+  float: left;
+  img {
+    width: 7rem;
+  }
+}
+
+.header-links, .footer-links {
+  float: right;
+  li {
+    float: left;
+    padding-left: $small-padding;
+  }
+}
+
+.header-links li {
+  margin-top: -1.5rem;
+}
+
+.jumbotron {
+  padding: $small-padding calc(#{$small-padding} * 2);
+  @include cover-background("img/asia-travel.jpg", "center center fixed", "cover");
+
+  h1, h3 {
+    color: $contrast-color;
+    margin: $general-padding 0;
+  }
+
+  div {
+    padding: 10rem 0;
+  }
+}
+
+.features {
+  h2 {
+    color: $emphasis-color;
+  }
+
+  @include hori-list(33%, 10px, "left");
+  figure {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  #wand {
+    @include cover-background("img/wand.svg", "", "contain");
+  }
+  #soc-net {
+    @include cover-background("img/soc-net-profile.svg", "", "contain");
+  }
+  #friends {
+    @include cover-background("img/friends.svg", "", "contain");
+  }
+}
+
+.stats {
+  @include hori-list(33%, 0, "center");
+  figure, h3 {
+    color: $contrast-color;
+  }
+  figure {
+    font: 300 5em "Museo Sans Cyrl";
+    margin: $small-padding auto $general-padding;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+.stats::before {
+  @include transparent-background("img/meal.jpg", "center top fixed", "cover", 0.9);
+}
+
+.testies {
+  h2 {
+    color: $emphasis-color;
+  }
+
+  @include hori-list(50%, $general-padding, "left");
+  img {
+    float: left;
+    margin-right: $small-padding;
+  }
+  div {
+    width: calc(100% - 150px);
+    float: right;
+    display: inline;
+  }
+
+  .testie-name {
+    margin-top: $small-padding;
+    font: 800 1em "Avenir";
+    text-transform: uppercase;
+    color: $tagline-color;
+  }
+
+  .testie-title {
+    font: 100 1em "Avenir";
+    color: $tagline-color;
+  }
+}
+
+.newsletter {
+  h2 {
+    color: black;
+  }
+  h3 {
+    margin: $small-padding 0 $general-padding;
+    color: $tagline-color;
+  }
+  input {
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    margin: $general-padding 0;
+
+  }
+  input[type="text"] {
+    width: 20rem;
+    background-color: white;
+    color: $tagline-color;
+    padding-left: 1rem;
+    text-align: left;
+  }
+  input[type="submit"] {
+    width: 10rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: $contrast-color;
+    background-color: rgb(33,53,144);
+  }
+}
+
+.newsletter::before {
+  @include transparent-background("img/lust.jpg", "center top fixed", "cover", 0.85);
+}
