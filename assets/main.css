@@ -1,19 +1,11 @@
-html, body, header, nav, h1, a,
-ul, li, strong, main, button, i,
-section, img, div, h2, p, form,
-fieldset, label, input, textarea,
-span, article, footer, time, small {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
+  box-sizing: border-box;
   font: inherit;
   color: inherit;
   text-align: inherit;
-  text-decoration: inherit;
-  vertical-align: inherit;
-  box-sizing: inherit;
-  background: transparent; }
+  text-decoration: inherit; }
 
 ul {
   list-style: none; }
@@ -70,8 +62,12 @@ h4 {
 
 .header {
   position: absolute;
+  top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 60px 60px 0;
   color: #fff; }
 
@@ -79,15 +75,12 @@ h4 {
   width: inherit;
   padding: 30px 60px; }
 
-.header-logo {
-  float: left; }
-  .header-logo img {
-    width: 7rem; }
+.header-logo img {
+  width: 7rem; }
 
 .header-links, .footer-links {
-  float: right; }
+  display: flex; }
   .header-links li, .footer-links li {
-    float: left;
     padding-left: 30px; }
 
 .header-links li {

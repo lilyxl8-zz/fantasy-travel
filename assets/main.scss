@@ -38,22 +38,15 @@ $tagline-color: #4A4A4A;
   }
 }
 
-html, body, header, nav, h1, a,
-ul, li, strong, main, button, i,
-section, img, div, h2, p, form,
-fieldset, label, input, textarea,
-span, article, footer, time, small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
   font: inherit;
   color: inherit;
   text-align: inherit;
   text-decoration: inherit;
-  vertical-align: inherit;
-  box-sizing: inherit;
-  background: transparent;
 }
 
 ul {
@@ -124,8 +117,12 @@ h4 {
 
 .header {
   position: absolute;
-  left: 0;
-  right: 0;
+	top: 0;
+	left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
   padding: $general-padding $general-padding 0;
   color: $contrast-color;
 }
@@ -136,16 +133,17 @@ h4 {
 }
 
 .header-logo {
-  float: left;
+  // float: left;
   img {
     width: 7rem;
   }
 }
 
 .header-links, .footer-links {
-  float: right;
+  // float: right;
+  display: flex;
   li {
-    float: left;
+    // float: left;
     padding-left: $small-padding;
   }
 }
