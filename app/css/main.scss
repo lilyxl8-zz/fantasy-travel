@@ -338,9 +338,10 @@ header li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 500px;
     width: 80%;
     margin: auto;
+    padding-top: $general-padding;
     @media (max-width: 800px) {
       flex-direction: column;
       // margin: 0 0 20px 0;
@@ -349,7 +350,6 @@ header li {
   input {
     height: 2.5rem;
     border-radius: 0.3rem;
-    margin: $general-padding 0;
   }
   input[type="text"] {
     width: 20rem;
@@ -361,7 +361,7 @@ header li {
   input[type="submit"] {
     width: 10rem;
     font-size: 1.2rem;
-    margin-left: 1rem;
+    margin: 1rem 1rem;
     color: $contrast-color;
     background-color: rgb(33,53,144);
   }
