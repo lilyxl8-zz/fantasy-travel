@@ -26,18 +26,7 @@ $tagline-color: #4A4A4A;
   z-index: -1;
 }
 
-@mixin hori-list($item-width, $vert-padding, $text-alignment) {
-  ul {
-    margin: #{$vert-padding} $small-padding;
-    li {
-      width: calc(#{$item-width} - #{$general-padding});
-      float: left;
-      padding: 0 $small-padding;
-      text-align: unquote($text-alignment);
-    }
-  }
-}
-
+// flexbox list, pass in item width as %
 @mixin flex-list($flex-basis) {
   .grid li {
     padding: 0 30px;
@@ -99,24 +88,25 @@ section {
   min-height: $section-height;
 }
 
-.jumbotron {
-  height: 37rem;
-}
-
 .stats, .newsletter {
   height: $section-height;
 }
 
 ul.grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.jumbotron h1 {
-  font: 800 2.7em "Avenir";
-  letter-spacing: 0.05em;
+// 1 JUMBOTRON
+
+.jumbotron {
+  height: 37rem;
+  h1 {
+    font: 800 2.7em "Avenir";
+    letter-spacing: 0.05em;
+  }
 }
 
 h2 {
@@ -155,9 +145,6 @@ header {
   .header-logo {
 		margin-bottom: 50px;
 	}
-  // section {
-  //   height: $section-height + 5rem;
-  // }
 }
 
 footer {
@@ -169,22 +156,21 @@ footer {
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
-    // margin: 0 0 20px 0;
+    h1 {
+      margin-top: $small-padding;
+    }
   }
 }
 
 .header-logo {
-  // float: left;
   img {
     width: 7rem;
   }
 }
 
 header ul, footer ul {
-  // float: right;
   display: flex;
   li {
-    // float: left;
     padding-left: $small-padding;
   }
 }
@@ -195,6 +181,7 @@ header li {
 
 .jumbotron {
   padding: $small-padding calc(#{$small-padding} * 2);
+
   @include cover-background("../img/asia-travel.jpg", "center center fixed", "cover");
 
   h1, h3 {
@@ -212,7 +199,6 @@ header li {
     color: $emphasis-color;
   }
 
-  // @include hori-list(33%, 10px, "left");
   @include flex-list(30%);
 
   @media (max-width: 1000px) {
@@ -288,7 +274,6 @@ header li {
     margin-top: $general-padding;
   }
 
-  // @include hori-list(50%, $general-padding, "left");
   @include flex-list(45%);
 
   @media (max-width: 1000px) {
@@ -342,7 +327,6 @@ header li {
     padding-top: $general-padding;
     @media (max-width: 800px) {
       flex-direction: column;
-      // margin: 0 0 20px 0;
     }
   }
   input {
