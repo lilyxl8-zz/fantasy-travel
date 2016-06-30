@@ -2,13 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-gulp.task('hello', function() {
-  console.log('Hello Zell');
-});
-
 gulp.task('sass', function(){
   return gulp.src('app/scss/**/*.scss')
-    .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(sass())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
@@ -23,11 +19,9 @@ gulp.task('browserSync', function() {
   })
 })
 
-// run browserSync and compile sass before we start
-// watching a folder
+// run browserSync and compile sass before we start watching a folder
 gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  // Other watchers
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 })
