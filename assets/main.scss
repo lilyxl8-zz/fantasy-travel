@@ -302,11 +302,23 @@ h4 {
     margin: $small-padding 0 $general-padding;
     color: $tagline-color;
   }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    // flex-wrap: wrap;
+    max-width: 800px;
+    width: 80%;
+    margin: auto;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      // margin: 0 0 20px 0;
+    }
+  }
   input {
     height: 2.5rem;
     border-radius: 0.3rem;
     margin: $general-padding 0;
-
   }
   input[type="text"] {
     width: 20rem;
