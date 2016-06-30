@@ -197,7 +197,7 @@ header li {
   color: #213590; }
 .testies .grid li {
   padding: 0 30px;
-  flex-basis: 33%;
+  flex-basis: 50%;
   text-align: center; }
 @media (max-width: 1000px) {
   .testies .grid li {

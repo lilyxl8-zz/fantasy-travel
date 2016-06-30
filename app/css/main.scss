@@ -38,10 +38,10 @@ $tagline-color: #4A4A4A;
   }
 }
 
-@mixin flex-list() {
+@mixin flex-list($flex-basis) {
   .grid li {
     padding: 0 30px;
-    flex-basis: 33%;
+    flex-basis: $flex-basis;
     text-align: center;
   }
 }
@@ -215,7 +215,7 @@ header li {
   }
 
   // @include hori-list(33%, 10px, "left");
-  @include flex-list();
+  @include flex-list(33%);
 
   @media (max-width: 1000px) {
     .grid li {
@@ -243,7 +243,7 @@ header li {
 
 .stats {
   // @include hori-list(33%, 0, "center");
-  @include flex-list();
+  @include flex-list(33%);
 
   @media (max-width: 1000px) {
     .grid li {
@@ -281,7 +281,7 @@ header li {
   }
 
   // @include hori-list(50%, $general-padding, "left");
-  @include flex-list();
+  @include flex-list(50%);
 
   @media (max-width: 1000px) {
     .grid li {
