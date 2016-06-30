@@ -173,25 +173,15 @@ header ul, footer ul {
 
 // 2 FEATURES
 .features {
+  @include flex-list(30%);
   h2 {
     color: $emphasis-color;
   }
-
-  @include flex-list(30%);
-
-  @media (max-width: 1000px) {
-    .grid li {
-      flex-basis: 70%;
-      margin-bottom: $general-padding;
-    }
-  }
-
   figure {
     width: 90px;
     height: 90px;
     margin: 0 auto;
   }
-
   #wand {
     @include cover-background("../img/wand.svg", "", "contain");
   }
@@ -201,6 +191,12 @@ header ul, footer ul {
   #friends {
     @include cover-background("../img/friends.svg", "", "contain");
   }
+  @media (max-width: 1000px) {
+    .grid li {
+      flex-basis: 70%;
+      margin-bottom: $general-padding;
+    }
+  }
 }
 
 .features, .testies {
@@ -209,10 +205,19 @@ header ul, footer ul {
   }
 }
 
+// 3 STATS
 .stats {
-  // @include hori-list(33%, 0, "center");
   @include flex-list(30%);
-
+  figure, h3 {
+    color: $contrast-color;
+  }
+  figure {
+    font: 300 5em "Museo Sans Cyrl";
+    margin: $small-padding auto $small-padding;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   @media (max-width: 1000px) {
     .grid li {
       flex-basis: 70%;
@@ -225,17 +230,6 @@ header ul, footer ul {
       margin: 0 auto 15px;
     }
     height: $section-height + 18rem;
-  }
-
-  figure, h3 {
-    color: $contrast-color;
-  }
-  figure {
-    font: 300 5em "Museo Sans Cyrl";
-    margin: $small-padding auto $small-padding;
-  }
-  h3 {
-    font-size: 1.5em;
   }
 }
 
