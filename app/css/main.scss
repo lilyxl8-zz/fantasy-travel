@@ -215,7 +215,7 @@ header li {
   }
 
   // @include hori-list(33%, 10px, "left");
-  @include flex-list(33%);
+  @include flex-list(30%);
 
   @media (max-width: 1000px) {
     .grid li {
@@ -241,9 +241,15 @@ header li {
   }
 }
 
+.features, .testies {
+  p {
+    text-align: left;
+  }
+}
+
 .stats {
   // @include hori-list(33%, 0, "center");
-  @include flex-list(33%);
+  @include flex-list(30%);
 
   @media (max-width: 1000px) {
     .grid li {
@@ -281,7 +287,7 @@ header li {
   }
 
   // @include hori-list(50%, $general-padding, "left");
-  @include flex-list(50%);
+  @include flex-list(45%);
 
   @media (max-width: 1000px) {
     .grid li {

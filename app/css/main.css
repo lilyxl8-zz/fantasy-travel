@@ -128,7 +128,7 @@ header li {
   color: #213590; }
 .features .grid li {
   padding: 0 30px;
-  flex-basis: 33%;
+  flex-basis: 30%;
   text-align: center; }
 @media (max-width: 1000px) {
   .features .grid li {
@@ -157,9 +157,12 @@ header li {
   -o-background-size: contain;
   background-size: contain; }
 
+.features p, .testies p {
+  text-align: left; }
+
 .stats .grid li {
   padding: 0 30px;
-  flex-basis: 33%;
+  flex-basis: 30%;
   text-align: center; }
 @media (max-width: 1000px) {
   .stats {
@@ -197,7 +200,7 @@ header li {
   color: #213590; }
 .testies .grid li {
   padding: 0 30px;
-  flex-basis: 50%;
+  flex-basis: 45%;
   text-align: center; }
 @media (max-width: 1000px) {
   .testies .grid li {
