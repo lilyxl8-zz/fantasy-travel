@@ -120,51 +120,47 @@ h4 {
 
 .jumbotron {
   height: 37rem;
+  padding: $small-padding calc(#{$small-padding} * 2);
+  @include cover-background("../img/asia-travel.jpg", "center center fixed", "cover");
+  h1, h3 {
+    color: $contrast-color;
+    margin: $general-padding 0;
+  }
+  div {
+    padding: 10rem 0;
+  }
   h1 {
     font: 800 2.7em "Avenir";
     letter-spacing: 0.05em;
   }
-}
 
-header {
-  position: absolute;
-	top: 0;
-	left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-	align-items: center;
-  padding: $general-padding $general-padding 0;
-  color: $contrast-color;
+  header {
+    position: absolute;
+  	top: 0;
+  	left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  	align-items: center;
+    padding: $general-padding $general-padding 0;
+    color: $contrast-color;
 
-  @media (max-width: 800px){
-  	flex-direction: column;
     .header-logo {
-  		margin-bottom: 50px;
-  	}
-  }
-}
-
-
-
-footer {
-  width: 100%;
-  padding: $small-padding $general-padding;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 800px) {
-    flex-direction: column-reverse;
-    h1 {
-      margin-top: $small-padding;
+      img {
+        width: 7rem;
+      }
     }
-  }
-}
 
-.header-logo {
-  img {
-    width: 7rem;
+    li {
+      margin-top: -1.5rem;
+    }
+
+    @media (max-width: 800px){
+    	flex-direction: column;
+      .header-logo {
+    		margin-bottom: 50px;
+    	}
+    }
   }
 }
 
@@ -175,25 +171,7 @@ header ul, footer ul {
   }
 }
 
-header li {
-  margin-top: -1.5rem;
-}
-
-.jumbotron {
-  padding: $small-padding calc(#{$small-padding} * 2);
-
-  @include cover-background("../img/asia-travel.jpg", "center center fixed", "cover");
-
-  h1, h3 {
-    color: $contrast-color;
-    margin: $general-padding 0;
-  }
-
-  div {
-    padding: 10rem 0;
-  }
-}
-
+// 2 FEATURES
 .features {
   h2 {
     color: $emphasis-color;
@@ -351,4 +329,21 @@ header li {
 
 .newsletter::before {
   @include transparent-background("../img/lust.jpg", "center top fixed", "cover", 0.85);
+}
+
+
+
+footer {
+  width: 100%;
+  padding: $small-padding $general-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    h1 {
+      margin-top: $small-padding;
+    }
+  }
 }

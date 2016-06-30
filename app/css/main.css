@@ -65,51 +65,7 @@ h4 {
   padding: 30px 0; }
 
 .jumbotron {
-  height: 37rem; }
-  .jumbotron h1 {
-    font: 800 2.7em "Avenir";
-    letter-spacing: 0.05em; }
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 60px 0;
-  color: #fff; }
-  @media (max-width: 800px) {
-    header {
-      flex-direction: column; }
-      header .header-logo {
-        margin-bottom: 50px; } }
-
-footer {
-  width: 100%;
-  padding: 30px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  @media (max-width: 800px) {
-    footer {
-      flex-direction: column-reverse; }
-      footer h1 {
-        margin-top: 30px; } }
-
-.header-logo img {
-  width: 7rem; }
-
-header ul, footer ul {
-  display: flex; }
-  header ul li, footer ul li {
-    padding-left: 30px; }
-
-header li {
-  margin-top: -1.5rem; }
-
-.jumbotron {
+  height: 37rem;
   padding: 30px calc(30px * 2);
   background: url("../img/asia-travel.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -121,6 +77,33 @@ header li {
     margin: 60px 0; }
   .jumbotron div {
     padding: 10rem 0; }
+  .jumbotron h1 {
+    font: 800 2.7em "Avenir";
+    letter-spacing: 0.05em; }
+  .jumbotron header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 0;
+    color: #fff; }
+    .jumbotron header .header-logo img {
+      width: 7rem; }
+    .jumbotron header li {
+      margin-top: -1.5rem; }
+    @media (max-width: 800px) {
+      .jumbotron header {
+        flex-direction: column; }
+        .jumbotron header .header-logo {
+          margin-bottom: 50px; } }
+
+header ul, footer ul {
+  display: flex; }
+  header ul li, footer ul li {
+    padding-left: 30px; }
 
 .features h2 {
   color: #213590; }
@@ -269,5 +252,17 @@ header li {
   height: inherit;
   position: absolute;
   z-index: -1; }
+
+footer {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 800px) {
+    footer {
+      flex-direction: column-reverse; }
+      footer h1 {
+        margin-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
