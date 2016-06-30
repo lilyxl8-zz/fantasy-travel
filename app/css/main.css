@@ -41,10 +41,13 @@ body {
 
 section {
   text-align: center;
-  min-height: 37rem; }
+  min-height: 33rem; }
 
-.jumbotron, .stats, .newsletter {
+.jumbotron {
   height: 37rem; }
+
+.stats, .newsletter {
+  height: 33rem; }
 
 ul.grid {
   width: 100%;
@@ -130,7 +133,7 @@ header li {
 @media (max-width: 1000px) {
   .features .grid li {
     flex-basis: 70%;
-    margin-bottom: 65px; } }
+    margin-bottom: 60px; } }
 .features figure {
   width: 90px;
   height: 90px;
@@ -160,15 +163,19 @@ header li {
   text-align: center; }
 @media (max-width: 1000px) {
   .stats {
-    height: 65rem; }
+    height: 51rem; }
     .stats .grid li {
       flex-basis: 70%;
-      margin-bottom: 65px; } }
+      margin-bottom: 30px; }
+    .stats .grid li:first-child figure {
+      margin-top: 0; }
+    .stats figure {
+      margin: 0 auto 15px; } }
 .stats figure, .stats h3 {
   color: #fff; }
 .stats figure {
   font: 300 5em "Museo Sans Cyrl";
-  margin: 30px auto 60px; }
+  margin: 30px auto 30px; }
 .stats h3 {
   font-size: 1.5em; }
 

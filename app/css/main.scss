@@ -1,6 +1,6 @@
 $general-padding: 60px;
 $small-padding: 30px;
-$section-height: 37rem;
+$section-height: 33rem;
 
 $contrast-color: #fff;
 $emphasis-color: #213590;
@@ -101,7 +101,11 @@ section {
   min-height: $section-height;
 }
 
-.jumbotron, .stats, .newsletter {
+.jumbotron {
+  height: 37rem;
+}
+
+.stats, .newsletter {
   height: $section-height;
 }
 
@@ -216,7 +220,7 @@ header li {
   @media (max-width: 1000px) {
     .grid li {
       flex-basis: 70%;
-      margin-bottom: 65px;
+      margin-bottom: $general-padding;
     }
   }
 
@@ -244,9 +248,15 @@ header li {
   @media (max-width: 1000px) {
     .grid li {
       flex-basis: 70%;
-      margin-bottom: 65px;
+      margin-bottom: $small-padding;
     }
-    height: $section-height + 28rem;
+    .grid li:first-child figure {
+      margin-top: 0;
+    }
+    figure {
+      margin: 0 auto 15px;
+    }
+    height: $section-height + 18rem;
   }
 
   figure, h3 {
@@ -254,7 +264,7 @@ header li {
   }
   figure {
     font: 300 5em "Museo Sans Cyrl";
-    margin: $small-padding auto $general-padding;
+    margin: $small-padding auto $small-padding;
   }
   h3 {
     font-size: 1.5em;
