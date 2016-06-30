@@ -286,10 +286,17 @@ header li {
     color: $emphasis-color;
   }
 
+  ul {
+    margin-top: $general-padding;
+  }
+
   // @include hori-list(50%, $general-padding, "left");
   @include flex-list(45%);
 
   @media (max-width: 1000px) {
+    ul {
+      margin-top: 0;
+    }
     .grid li {
       flex-basis: 70%;
       margin-bottom: 65px;

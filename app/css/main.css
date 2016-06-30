@@ -198,11 +198,15 @@ header li {
 
 .testies h2 {
   color: #213590; }
+.testies ul {
+  margin-top: 60px; }
 .testies .grid li {
   padding: 0 30px;
   flex-basis: 45%;
   text-align: center; }
 @media (max-width: 1000px) {
+  .testies ul {
+    margin-top: 0; }
   .testies .grid li {
     flex-basis: 70%;
     margin-bottom: 65px; } }
