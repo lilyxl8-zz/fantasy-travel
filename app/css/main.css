@@ -13,14 +13,12 @@ ul {
 img {
   display: block; }
 
-input[type="password"],
-input[type="email"],
-input[type="text"],
-input[type="submit"],
+input,
 textarea,
 button {
   -webkit-appearance: none;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+  border: 0; }
 
 button,
 input[type="submit"] {
