@@ -62,14 +62,14 @@ h2 {
   padding: 60px 0;
   letter-spacing: 0.03em; }
 
-h3, .footer-links > li {
+h3, footer li {
   font: 300 1.3em "Museo Sans Cyrl";
   letter-spacing: 0.02em; }
 
 h4 {
   font: 800 1.15em "Avenir"; }
 
-.header {
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,27 +81,33 @@ h4 {
   color: #fff; }
 
 @media (max-width: 800px) {
-  .header {
+  header {
     flex-direction: column; }
 
-  .header-logo {
+  header-logo {
     margin-bottom: 50px; }
 
   section {
     height: 38rem; } }
-.footer {
-  width: inherit;
-  padding: 30px 60px; }
+footer {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 800px) {
+    footer {
+      flex-direction: column-reverse; } }
 
-.header-logo img {
+header-logo img {
   width: 7rem; }
 
-.header-links, .footer-links {
+header ul, footer ul {
   display: flex; }
-  .header-links li, .footer-links li {
+  header ul li, footer ul li {
     padding-left: 30px; }
 
-.header-links li {
+header li {
   margin-top: -1.5rem; }
 
 .jumbotron {
