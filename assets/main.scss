@@ -98,6 +98,7 @@ body {
 
 section {
   text-align: center;
+  min-height: $section-height;
 }
 
 .jumbotron, .stats, .newsletter {
@@ -260,7 +261,16 @@ h4 {
     color: $emphasis-color;
   }
 
-  @include hori-list(50%, $general-padding, "left");
+  // @include hori-list(50%, $general-padding, "left");
+  @include flex-list();
+
+  @media (max-width: 1000px) {
+    .grid li {
+      flex-basis: 70%;
+      margin-bottom: 65px;
+    }
+  }
+
   img {
     float: left;
     margin-right: $small-padding;

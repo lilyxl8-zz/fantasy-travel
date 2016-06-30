@@ -40,7 +40,8 @@ body {
   background: #fff; }
 
 section {
-  text-align: center; }
+  text-align: center;
+  min-height: 33rem; }
 
 .jumbotron, .stats, .newsletter {
   height: 33rem; }
@@ -183,13 +184,14 @@ h4 {
 
 .testies h2 {
   color: #213590; }
-.testies ul {
-  margin: 60px 30px; }
-  .testies ul li {
-    width: calc(50% - 60px);
-    float: left;
-    padding: 0 30px;
-    text-align: left; }
+.testies .grid li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center; }
+@media (max-width: 1000px) {
+  .testies .grid li {
+    flex-basis: 70%;
+    margin-bottom: 65px; } }
 .testies img {
   float: left;
   margin-right: 30px; }
