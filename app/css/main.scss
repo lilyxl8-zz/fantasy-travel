@@ -144,10 +144,11 @@ header {
     margin-top: -1.5rem;
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     flex-direction: column;
     .header-logo {
       margin-bottom: 50px;
+      padding-left: 15px;
     }
   }
 }

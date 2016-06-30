@@ -80,7 +80,8 @@ header {
     header {
       flex-direction: column; }
       header .header-logo {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        padding-left: 15px; } }
 
 .jumbotron {
   height: 37rem;
@@ -108,30 +109,36 @@ header ul, footer ul {
   padding: 0 30px;
   flex-basis: 30%;
   text-align: center; }
+
 .features h2 {
   color: #213590; }
+
 .features figure {
   width: 90px;
   height: 90px;
   margin: 0 auto; }
+
 .features #wand {
   background: url("../img/wand.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
+
 .features #soc-net {
   background: url("../img/soc-net-profile.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
+
 .features #friends {
   background: url("../img/friends.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
+
 @media (max-width: 1000px) {
   .features .grid li {
     flex-basis: 70%;
@@ -144,13 +151,17 @@ header ul, footer ul {
   padding: 0 30px;
   flex-basis: 30%;
   text-align: center; }
+
 .stats figure, .stats h3 {
   color: #fff; }
+
 .stats figure {
   font: 300 5em "Museo Sans Cyrl";
   margin: 30px auto 30px; }
+
 .stats h3 {
   font-size: 1.5em; }
+
 @media (max-width: 1000px) {
   .stats {
     height: 44rem; }
@@ -180,25 +191,32 @@ header ul, footer ul {
   padding: 0 30px;
   flex-basis: 45%;
   text-align: center; }
+
 .testies h2 {
   color: #213590; }
+
 .testies ul {
   margin-top: 60px; }
+
 .testies img {
   float: left;
   margin-right: 30px; }
+
 .testies div {
   width: calc(100% - 150px);
   float: right;
   display: inline; }
+
 .testies .testie-name {
   margin-top: 30px;
   font: 800 1em "Avenir";
   text-transform: uppercase;
   color: #4A4A4A; }
+
 .testies .testie-title {
   font: 100 1em "Avenir";
   color: #4A4A4A; }
+
 @media (max-width: 1000px) {
   .testies ul {
     margin-top: 0; }
@@ -208,9 +226,11 @@ header ul, footer ul {
 
 .newsletter h2 {
   color: black; }
+
 .newsletter h3 {
   margin: 30px 0 60px;
   color: #4A4A4A; }
+
 .newsletter form {
   display: flex;
   align-items: center;
@@ -222,15 +242,18 @@ header ul, footer ul {
   @media (max-width: 800px) {
     .newsletter form {
       flex-direction: column; } }
+
 .newsletter input {
   height: 2.5rem;
   border-radius: 0.3rem; }
+
 .newsletter input[type="text"] {
   width: 20rem;
   background-color: white;
   color: #4A4A4A;
   padding-left: 1rem;
   text-align: left; }
+
 .newsletter input[type="submit"] {
   width: 10rem;
   font-size: 1.2rem;
@@ -263,5 +286,3 @@ footer {
       flex-direction: column-reverse; }
       footer h1 {
         margin-top: 30px; } }
-
-/*# sourceMappingURL=main.css.map */
