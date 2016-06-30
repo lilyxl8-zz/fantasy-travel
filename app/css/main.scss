@@ -133,17 +133,14 @@ header {
   align-items: center;
   padding: $general-padding $general-padding 0;
   color: $contrast-color;
-
   .header-logo {
     img {
       width: 7rem;
     }
   }
-
   li {
     margin-top: -1.5rem;
   }
-
   @media (max-width: 800px) {
     flex-direction: column;
     .header-logo {
