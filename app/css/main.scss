@@ -131,6 +131,7 @@ h3, footer li {
 
 h4 {
   font: 800 1.15em "Avenir";
+  padding: $small-padding 0;
 }
 
 header {
@@ -152,9 +153,9 @@ header {
   .header-logo {
 		margin-bottom: 50px;
 	}
-  section {
-    height: $section-height + 5rem;
-  }
+  // section {
+  //   height: $section-height + 5rem;
+  // }
 }
 
 footer {
