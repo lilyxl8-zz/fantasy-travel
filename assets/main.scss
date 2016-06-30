@@ -94,6 +94,13 @@ section {
   text-align: center;
 }
 
+ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .jumbotron h1 {
   font: 800 2.7em "Avenir";
   letter-spacing: 0.05em;
@@ -183,7 +190,20 @@ h4 {
     color: $emphasis-color;
   }
 
-  @include hori-list(33%, 10px, "left");
+  // @include hori-list(33%, 10px, "left");
+  .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+  }
+
+  @media (max-width: 1000px) {
+    .grid li {
+      flex-basis: 70%;
+      margin-bottom: 65px;
+    }
+  }
+
   figure {
     width: 90px;
     height: 90px;
