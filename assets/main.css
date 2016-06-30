@@ -99,7 +99,7 @@ footer {
     footer {
       flex-direction: column-reverse; } }
 
-header-logo img {
+.header-logo img {
   width: 7rem; }
 
 header ul, footer ul {
