@@ -192,7 +192,7 @@ header li {
 
 .jumbotron {
   padding: $small-padding calc(#{$small-padding} * 2);
-  @include cover-background("img/asia-travel.jpg", "center center fixed", "cover");
+  @include cover-background("../img/asia-travel.jpg", "center center fixed", "cover");
 
   h1, h3 {
     color: $contrast-color;
@@ -226,13 +226,13 @@ header li {
   }
 
   #wand {
-    @include cover-background("img/wand.svg", "", "contain");
+    @include cover-background("../img/wand.svg", "", "contain");
   }
   #soc-net {
-    @include cover-background("img/soc-net-profile.svg", "", "contain");
+    @include cover-background("../img/soc-net-profile.svg", "", "contain");
   }
   #friends {
-    @include cover-background("img/friends.svg", "", "contain");
+    @include cover-background("../img/friends.svg", "", "contain");
   }
 }
 
@@ -261,7 +261,7 @@ header li {
 }
 
 .stats::before {
-  @include transparent-background("img/meal.jpg", "center top fixed", "cover", 0.9);
+  @include transparent-background("../img/meal.jpg", "center top fixed", "cover", 0.9);
 }
 
 .testies {
@@ -344,5 +344,5 @@ header li {
 }
 
 .newsletter::before {
-  @include transparent-background("img/lust.jpg", "center top fixed", "cover", 0.85);
+  @include transparent-background("../img/lust.jpg", "center top fixed", "cover", 0.85);
 }

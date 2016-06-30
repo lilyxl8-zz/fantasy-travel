@@ -112,7 +112,7 @@ header li {
 
 .jumbotron {
   padding: 30px calc(30px * 2);
-  background: url("img/asia-travel.jpg") no-repeat center center fixed;
+  background: url("../img/asia-travel.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,19 +138,19 @@ header li {
   height: 90px;
   margin: 0 auto; }
 .features #wand {
-  background: url("img/wand.svg") no-repeat ;
+  background: url("../img/wand.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
 .features #soc-net {
-  background: url("img/soc-net-profile.svg") no-repeat ;
+  background: url("../img/soc-net-profile.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
 .features #friends {
-  background: url("img/friends.svg") no-repeat ;
+  background: url("../img/friends.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -176,7 +176,7 @@ header li {
 
 .stats::before {
   content: "";
-  background: url("img/meal.jpg") no-repeat center top fixed;
+  background: url("../img/meal.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -248,7 +248,7 @@ header li {
 
 .newsletter::before {
   content: "";
-  background: url("img/lust.jpg") no-repeat center top fixed;
+  background: url("../img/lust.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
