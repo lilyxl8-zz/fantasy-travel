@@ -64,6 +64,26 @@ h4 {
   font: 800 1.15em "Avenir";
   padding: 30px 0; }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 0;
+  color: #fff; }
+  header .header-logo img {
+    width: 7rem; }
+  header li {
+    margin-top: -1.5rem; }
+  @media (max-width: 800px) {
+    header {
+      flex-direction: column; }
+      header .header-logo {
+        margin-bottom: 50px; } }
+
 .jumbotron {
   height: 37rem;
   padding: 30px calc(30px * 2);
@@ -80,25 +100,6 @@ h4 {
   .jumbotron h1 {
     font: 800 2.7em "Avenir";
     letter-spacing: 0.05em; }
-  .jumbotron header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 60px 0;
-    color: #fff; }
-    .jumbotron header .header-logo img {
-      width: 7rem; }
-    .jumbotron header li {
-      margin-top: -1.5rem; }
-    @media (max-width: 800px) {
-      .jumbotron header {
-        flex-direction: column; }
-        .jumbotron header .header-logo {
-          margin-bottom: 50px; } }
 
 header ul, footer ul {
   display: flex; }
