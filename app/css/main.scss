@@ -1,3 +1,5 @@
+// VARIABLES
+
 $general-padding: 60px;
 $small-padding: 30px;
 $section-height: 33rem;
@@ -5,6 +7,8 @@ $section-height: 33rem;
 $contrast-color: #fff;
 $emphasis-color: #213590;
 $tagline-color: #4A4A4A;
+
+// MIXINS
 
 @mixin cover-background($img-uri, $background-pos, $background-size) {
   background: url($img-uri) no-repeat unquote($background-pos);
@@ -34,6 +38,8 @@ $tagline-color: #4A4A4A;
     text-align: center;
   }
 }
+
+// RESETS
 
 *{
 	margin: 0;
@@ -66,15 +72,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Clearfix */
-
+// clearfix
 .group:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* Header */
+// GLOBAL STYLES
 
 body {
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -117,6 +122,7 @@ h4 {
 }
 
 // 0 HEADER
+
 header {
   position: absolute;
   top: 0;
@@ -147,6 +153,7 @@ header {
 }
 
 // 1 JUMBOTRON
+
 .jumbotron {
   height: 37rem;
   padding: $small-padding calc(#{$small-padding} * 2);
@@ -172,6 +179,7 @@ header ul, footer ul {
 }
 
 // 2 FEATURES
+
 .features {
   @include flex-list(30%);
   h2 {
@@ -206,6 +214,7 @@ header ul, footer ul {
 }
 
 // 3 STATS
+
 .stats {
   @include flex-list(30%);
   figure, h3 {
@@ -238,6 +247,7 @@ header ul, footer ul {
 }
 
 // 4 TESTIES
+
 .testies {
   @include flex-list(45%);
   h2 {
@@ -277,6 +287,7 @@ header ul, footer ul {
 }
 
 // 5 NEWSLETTER
+
 .newsletter {
   h2 {
     color: black;
@@ -322,6 +333,7 @@ header ul, footer ul {
 }
 
 // 6 FOOTER
+
 footer {
   width: 100%;
   padding: $small-padding $general-padding;
