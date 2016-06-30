@@ -127,6 +127,18 @@ h4 {
   color: $contrast-color;
 }
 
+@media (max-width: 800px){
+	.header {
+		flex-direction: column;
+	}
+  .header-logo {
+		margin-bottom: 50px;
+	}
+  section {
+    height: $section-height + 5rem;
+  }
+}
+
 .footer {
   width: inherit;;
   padding: $small-padding $general-padding;

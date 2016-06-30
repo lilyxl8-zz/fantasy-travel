@@ -71,6 +71,15 @@ h4 {
   padding: 60px 60px 0;
   color: #fff; }
 
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column; }
+
+  .header-logo {
+    margin-bottom: 50px; }
+
+  section {
+    height: 38rem; } }
 .footer {
   width: inherit;
   padding: 30px 60px; }
