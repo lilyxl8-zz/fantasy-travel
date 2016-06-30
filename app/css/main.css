@@ -177,20 +177,14 @@ header ul, footer ul {
   position: absolute;
   z-index: -1; }
 
-.testies h2 {
-  color: #213590; }
-.testies ul {
-  margin-top: 60px; }
 .testies .grid li {
   padding: 0 30px;
   flex-basis: 45%;
   text-align: center; }
-@media (max-width: 1000px) {
-  .testies ul {
-    margin-top: 0; }
-  .testies .grid li {
-    flex-basis: 70%;
-    margin-bottom: 65px; } }
+.testies h2 {
+  color: #213590; }
+.testies ul {
+  margin-top: 60px; }
 .testies img {
   float: left;
   margin-right: 30px; }
@@ -206,6 +200,12 @@ header ul, footer ul {
 .testies .testie-title {
   font: 100 1em "Avenir";
   color: #4A4A4A; }
+@media (max-width: 1000px) {
+  .testies ul {
+    margin-top: 0; }
+  .testies .grid li {
+    flex-basis: 70%;
+    margin-bottom: 65px; } }
 
 .newsletter h2 {
   color: black; }

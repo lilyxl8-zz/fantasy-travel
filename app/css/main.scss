@@ -237,27 +237,15 @@ header ul, footer ul {
   @include transparent-background("../img/meal.jpg", "center top fixed", "cover", 0.9);
 }
 
+// 4 TESTIES
 .testies {
+  @include flex-list(45%);
   h2 {
     color: $emphasis-color;
   }
-
   ul {
     margin-top: $general-padding;
   }
-
-  @include flex-list(45%);
-
-  @media (max-width: 1000px) {
-    ul {
-      margin-top: 0;
-    }
-    .grid li {
-      flex-basis: 70%;
-      margin-bottom: 65px;
-    }
-  }
-
   img {
     float: left;
     margin-right: $small-padding;
@@ -267,20 +255,28 @@ header ul, footer ul {
     float: right;
     display: inline;
   }
-
   .testie-name {
     margin-top: $small-padding;
     font: 800 1em "Avenir";
     text-transform: uppercase;
     color: $tagline-color;
   }
-
   .testie-title {
     font: 100 1em "Avenir";
     color: $tagline-color;
   }
+  @media (max-width: 1000px) {
+    ul {
+      margin-top: 0;
+    }
+    .grid li {
+      flex-basis: 70%;
+      margin-bottom: 65px;
+    }
+  }
 }
 
+// 5 NEWSLETTER
 .newsletter {
   h2 {
     color: black;
@@ -325,8 +321,7 @@ header ul, footer ul {
   @include transparent-background("../img/lust.jpg", "center top fixed", "cover", 0.85);
 }
 
-
-
+// 6 FOOTER
 footer {
   width: 100%;
   padding: $small-padding $general-padding;
