@@ -38,6 +38,13 @@ $tagline-color: #4A4A4A;
   }
 }
 
+@mixin flex-list() {
+  .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+  }
+}
 
 *{
 	margin: 0;
@@ -90,8 +97,11 @@ body {
 }
 
 section {
-  height: $section-height;
   text-align: center;
+}
+
+.jumbotron, .stats, .newsletter {
+  height: $section-height;
 }
 
 ul.grid {
@@ -191,11 +201,7 @@ h4 {
   }
 
   // @include hori-list(33%, 10px, "left");
-  .grid li {
-    padding: 0 30px;
-    flex-basis: 33%;
-    text-align: center;
-  }
+  @include flex-list();
 
   @media (max-width: 1000px) {
     .grid li {
@@ -222,7 +228,17 @@ h4 {
 }
 
 .stats {
-  @include hori-list(33%, 0, "center");
+  // @include hori-list(33%, 0, "center");
+  @include flex-list();
+
+  @media (max-width: 1000px) {
+    .grid li {
+      flex-basis: 70%;
+      margin-bottom: 65px;
+    }
+    height: $section-height + 28rem;
+  }
+
   figure, h3 {
     color: $contrast-color;
   }

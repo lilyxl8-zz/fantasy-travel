@@ -40,8 +40,10 @@ body {
   background: #fff; }
 
 section {
-  height: 33rem;
   text-align: center; }
+
+.jumbotron, .stats, .newsletter {
+  height: 33rem; }
 
 ul.grid {
   width: 100%;
@@ -147,13 +149,16 @@ h4 {
   -o-background-size: contain;
   background-size: contain; }
 
-.stats ul {
-  margin: 0 30px; }
-  .stats ul li {
-    width: calc(33% - 60px);
-    float: left;
-    padding: 0 30px;
-    text-align: center; }
+.stats .grid li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center; }
+@media (max-width: 1000px) {
+  .stats {
+    height: 61rem; }
+    .stats .grid li {
+      flex-basis: 70%;
+      margin-bottom: 65px; } }
 .stats figure, .stats h3 {
   color: #fff; }
 .stats figure {
