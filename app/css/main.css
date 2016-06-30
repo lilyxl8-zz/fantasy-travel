@@ -41,10 +41,10 @@ body {
 
 section {
   text-align: center;
-  min-height: 33rem; }
+  min-height: 37rem; }
 
 .jumbotron, .stats, .newsletter {
-  height: 33rem; }
+  height: 37rem; }
 
 ul.grid {
   width: 100%;
@@ -83,11 +83,12 @@ header {
 @media (max-width: 800px) {
   header {
     flex-direction: column; }
-  header-logo {
-    margin-bottom: 50px; }
-  section {
-    height: 38rem; } }
 
+  .header-logo {
+    margin-bottom: 50px; }
+
+  section {
+    height: 42rem; } }
 footer {
   width: 100%;
   padding: 30px 60px;
@@ -124,36 +125,30 @@ header li {
 
 .features h2 {
   color: #213590; }
-
 .features .grid li {
   padding: 0 30px;
   flex-basis: 33%;
   text-align: center; }
-
 @media (max-width: 1000px) {
   .features .grid li {
     flex-basis: 70%;
     margin-bottom: 65px; } }
-
 .features figure {
   width: 90px;
   height: 90px;
   margin: 0 auto; }
-
 .features #wand {
   background: url("../img/wand.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
-
 .features #soc-net {
   background: url("../img/soc-net-profile.svg") no-repeat ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain; }
-
 .features #friends {
   background: url("../img/friends.svg") no-repeat ;
   -webkit-background-size: contain;
@@ -165,21 +160,17 @@ header li {
   padding: 0 30px;
   flex-basis: 33%;
   text-align: center; }
-
 @media (max-width: 1000px) {
   .stats {
-    height: 61rem; }
+    height: 65rem; }
     .stats .grid li {
       flex-basis: 70%;
       margin-bottom: 65px; } }
-
 .stats figure, .stats h3 {
   color: #fff; }
-
 .stats figure {
   font: 300 5em "Museo Sans Cyrl";
   margin: 30px auto 60px; }
-
 .stats h3 {
   font-size: 1.5em; }
 
@@ -199,43 +190,35 @@ header li {
 
 .testies h2 {
   color: #213590; }
-
 .testies .grid li {
   padding: 0 30px;
   flex-basis: 33%;
   text-align: center; }
-
 @media (max-width: 1000px) {
   .testies .grid li {
     flex-basis: 70%;
     margin-bottom: 65px; } }
-
 .testies img {
   float: left;
   margin-right: 30px; }
-
 .testies div {
   width: calc(100% - 150px);
   float: right;
   display: inline; }
-
 .testies .testie-name {
   margin-top: 30px;
   font: 800 1em "Avenir";
   text-transform: uppercase;
   color: #4A4A4A; }
-
 .testies .testie-title {
   font: 100 1em "Avenir";
   color: #4A4A4A; }
 
 .newsletter h2 {
   color: black; }
-
 .newsletter h3 {
   margin: 30px 0 60px;
   color: #4A4A4A; }
-
 .newsletter form {
   display: flex;
   align-items: center;
@@ -246,19 +229,16 @@ header li {
   @media (max-width: 800px) {
     .newsletter form {
       flex-direction: column; } }
-
 .newsletter input {
   height: 2.5rem;
   border-radius: 0.3rem;
   margin: 60px 0; }
-
 .newsletter input[type="text"] {
   width: 20rem;
   background-color: white;
   color: #4A4A4A;
   padding-left: 1rem;
   text-align: left; }
-
 .newsletter input[type="submit"] {
   width: 10rem;
   font-size: 1.2rem;
@@ -279,3 +259,5 @@ header li {
   height: inherit;
   position: absolute;
   z-index: -1; }
+
+/*# sourceMappingURL=main.css.map */

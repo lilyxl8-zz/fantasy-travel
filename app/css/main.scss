@@ -1,6 +1,6 @@
 $general-padding: 60px;
 $small-padding: 30px;
-$section-height: 33rem;
+$section-height: 37rem;
 
 $contrast-color: #fff;
 $emphasis-color: #213590;
@@ -149,7 +149,7 @@ header {
 	header {
 		flex-direction: column;
 	}
-  header-logo {
+  .header-logo {
 		margin-bottom: 50px;
 	}
   section {
