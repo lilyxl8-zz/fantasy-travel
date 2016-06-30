@@ -23,6 +23,8 @@ gulp.task('browserSync', function() {
   })
 })
 
+// run browserSync and compile sass before we start
+// watching a folder
 gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   // Other watchers
