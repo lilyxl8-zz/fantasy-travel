@@ -345,3 +345,11 @@ footer {
     }
   }
 }
+
+// ANIMATIONS
+
+.animation-fadein {
+  -webkit-transform: translate3d(1, 0, 0);
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+}
