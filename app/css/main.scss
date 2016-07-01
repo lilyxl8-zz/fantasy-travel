@@ -348,8 +348,22 @@ footer {
 
 // ANIMATIONS
 
+.hide {
+  opacity: 0;
+}
+
 .animation-fadein {
   -webkit-transform: translate3d(1, 0, 0);
   animation: fadein 1s;
   -webkit-animation: fadein 1s;
+}
+
+@keyframes fadein
+{ from { margin-top: 50px; opacity: 0; }
+  to{ margin-top: 0; opacity: 1; }
+}
+
+@-webkit-keyframes fadein
+{ from { margin-top: 50px; opacity: 0; }
+  to{ margin-top: 0; opacity: 1; }
 }

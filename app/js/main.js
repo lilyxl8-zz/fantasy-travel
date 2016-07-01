@@ -13,10 +13,26 @@ function animateValue(id, start, end, duration) {
   }, stepTime);
 }
 
-var scroll3 = false;
+function fadeInList(id) {
+  var listChildren = document.getElementById(id).children;
+  var current = 0;
+  var timer = setInterval(function() {
+    listChildren[current].className = "animation-fadein";
+    current += 1;
+    if (current == listChildren.length) {
+        clearInterval(timer);
+    }
+  }, 400);
+}
+
+var scroll2, scroll3, scroll4 = false;
 
 window.addEventListener('scroll', function(e) {
-  if (window.scrollY > 700 && !scroll3) {
+  if (window.scrollY > 110 && !scroll2) {
+    scroll2 = true;
+    fadeInList("features-list");
+  }
+  else if (window.scrollY > 700 && !scroll3) {
     scroll3 = true;
     animateValue("value1", 500, 893, 200);
     animateValue("value2", 0, 23, 900);
