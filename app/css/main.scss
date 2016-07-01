@@ -198,6 +198,7 @@ header ul, footer ul {
     @include cover-background("../img/friends.svg", "", "contain");
   }
   @media (max-width: 1000px) {
+    height: 66rem;
     .grid li {
       flex-basis: 70%;
       margin-bottom: $general-padding;
@@ -274,6 +275,7 @@ header ul, footer ul {
     color: $tagline-color;
   }
   @media (max-width: 1000px) {
+    height: 37rem;
     ul {
       margin-top: 0;
     }
@@ -293,6 +295,7 @@ header ul, footer ul {
   h3 {
     margin: $small-padding 0 $general-padding;
     color: $tagline-color;
+    padding-bottom: $general-padding;
   }
   form {
     display: flex;
@@ -301,7 +304,7 @@ header ul, footer ul {
     max-width: 500px;
     width: 80%;
     margin: auto;
-    padding-top: $general-padding;
+    // padding-top: $general-padding;
     @media (max-width: 800px) {
       flex-direction: column;
     }
@@ -359,11 +362,11 @@ footer {
 }
 
 @keyframes fadein
-{ from { margin-top: 50px; opacity: 0; }
-  to{ margin-top: 0; opacity: 1; }
+{ from { padding-top: 50px; opacity: 0; }
+  to{ padding-top: 0; opacity: 1; }
 }
 
 @-webkit-keyframes fadein
-{ from { margin-top: 50px; opacity: 0; }
-  to{ margin-top: 0; opacity: 1; }
+{ from { padding-top: 50px; opacity: 0; }
+  to{ padding-top: 0; opacity: 1; }
 }
