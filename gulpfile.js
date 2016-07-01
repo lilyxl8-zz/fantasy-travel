@@ -15,6 +15,12 @@ gulp.task('sass', function(){
     }))
 });
 
+gulp.task('images', function(){
+  return gulp.src('app/orig/img/**/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('app/img'))
+});
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
