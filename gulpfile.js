@@ -15,12 +15,14 @@ gulp.task('sass', function(){
     }))
 });
 
+// minify images
 gulp.task('images', function(){
   return gulp.src('app/orig/img/**/*.+(png|jpg|gif|svg)')
   .pipe(imagemin())
   .pipe(gulp.dest('app/img'))
 });
 
+// in development, live-reload browser upon code change
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
